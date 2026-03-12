@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Sands | Luxury Stays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">AZURE SANDS</div>
+        <nav>
+            <ul class="nav-links">
+                <li>Suites</li>
+                <li>Dining</li>
+                <li>Wellness</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-overlay">
+            <section class="booking-card">
+                <h2>Escape to Paradise</h2>
+                <p>Experience the pinnacle of luxury architecture and ocean front living.</p>
+                
+                <form class="booking-form" onsubmit="event.preventDefault(); handleBooking();">
+                    <div class="input-group">
+                        <label for="checkin">CHECK-IN</label>
+                        <input type="date" id="checkin" title="Select check-in date">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="guests">GUESTS</label>
+                        <select id="guests" title="Select number of guests">
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="book-btn">Check Availability</button>
+                </form>
+                
+                <div id="statusMsg" class="status-hidden" aria-live="polite">
+                    Checking live room availability...
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
