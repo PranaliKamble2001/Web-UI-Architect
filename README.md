@@ -11,6 +11,10 @@ As an MCA student, I treat frontend development as a critical layer of Software 
 The repository follows a decoupled directory structure, ensuring each UI module is self-contained and portable:
 
 * **README.md**: Project documentation, engineering standards, and roadmap.
+* **Vibe-Stream-Player**: A modern media-logic interface focused on audio-visual synchronization.
+    * `index.html`: Accessible media-shell utilizing **ARIA-compliant** progress controls.
+    * `style.css`: High-fidelity glassmorphism engine with **vendor-prefixed** properties for Safari/iOS support.
+    * `script.js`: Media-state engine managing local asset playback, real-time syncing, and dynamic theme switching.
 * **India-Vendor-Portal**: A localized E-commerce Admin Terminal engineered for the Indian marketplace.
     * `index.html`: Dashboard architecture optimized for GST compliance and regional logistics tracking.
     * `style.css`: "India-Navy" design system utilizing `conic-gradient` for zero-dependency data visualization.
@@ -28,7 +32,7 @@ The repository follows a decoupled directory structure, ensuring each UI module 
     * `style.css`: Coastal-Luxury Design Engine with advanced backdrop-filtering.
     * `script.js`: Asynchronous state simulation for real-time availability feedback.
 
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 ## Design Standards
 Each module within this architecture adheres to the following engineering standards:
@@ -38,5 +42,4 @@ Each module within this architecture adheres to the following engineering standa
 * **Visual Fidelity**: Implementation of advanced effects including `-webkit-backdrop-filter` for cross-browser Glassmorphism.
 * **Accessibility**: Strict adherence to axe-core standards ensuring all interactive elements have accessible names and states.
 * **Performance**: Zero-dependency JavaScript for optimized DOM manipulation.
-
-------------------------------------------------------------------------------------------------
+* **Asset Integrity**: Organized local media storage ensuring repository portability and reliable asset routing.
