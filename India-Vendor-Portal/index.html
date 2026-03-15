@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Vendor Portal | Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-shell">
+        <aside class="sidebar">
+            <div class="logo">India<span>_POS</span></div>
+            <nav class="nav-links">
+                <div class="nav-item active">Dash-Board</div>
+                <div class="nav-item">Gst-Invoices</div>
+                <div class="nav-item">Stock-Management</div>
+                <div class="nav-item">Payouts</div>
+            </nav>
+        </aside>
+
+        <main class="workspace">
+            <header class="top-bar">
+                <div class="header-text">
+                    <h2>Vyapar Summary</h2>
+                    <p>GSTIN: 27AAAAA0000A1Z5 | Maharashtra Hub</p>
+                </div>
+                <div class="user-chip">P. Merchant | Admin</div>
+            </header>
+
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <label>TODAY'S_SALES</label>
+                    <div class="value">₹42,500</div>
+                    <span class="trend up">+15% vs yesterday</span>
+                </div>
+                <div class="kpi-card">
+                    <label>GST_COLLECTED</label>
+                    <div class="value">₹7,650</div>
+                </div>
+                <div class="kpi-card analysis-card">
+                    <label>PAYMENT_MODE_RATIO</label>
+                    <div class="chart-container">
+                        <div class="donut-chart">
+                            <div class="inner-circle">
+                                <span class="total-label">75%</span>
+                                <span class="sub-label">Prepaid</span>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item"><span class="dot prepaid"></span> UPI</div>
+                            <div class="legend-item"><span class="dot cod"></span> COD</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-container">
+                <div class="table-header">
+                    <h3>Recent Shipments</h3>
+                    <div class="actions">
+                        <button class="filter-btn" onclick="filterByState('Maharashtra')">MH Only</button>
+                        <button class="filter-btn secondary" onclick="resetTable()">View All</button>
+                    </div>
+                </div>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Location</th>
+                            <th>Amount</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-rows">
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
